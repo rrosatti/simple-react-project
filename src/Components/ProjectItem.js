@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 //import logo from './logo.svg';
 //import './App.css';
 
@@ -15,6 +16,11 @@ class ProjectItem extends Component {
       </li>
     );
   }
+}
+
+ProjectItem.propTypes = {
+  project: PropTypes.object,
+  onDelete: PropTypes.func
 }
 
 export default ProjectItem;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 //import logo from './logo.svg';
 //import './App.css';
 import ProjectItem from './ProjectItem'
@@ -26,6 +27,11 @@ class Projects extends Component {
       </div>
     );
   }
+}
+
+Projects.propTypes = {
+  projects: PropTypes.array,
+  onDelete: PropTypes.func
 }
 
 export default Projects;
